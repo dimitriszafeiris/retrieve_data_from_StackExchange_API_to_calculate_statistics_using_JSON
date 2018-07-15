@@ -31,12 +31,12 @@ total_reputation = 0
 for i in answers:
     # now song is a dictionary
     if (answers[i]["is_accepted"] == 'true'):
-		accepted_counter++
+		accepted_counter+=1
 		#Add to average only if this is an accepted answer
 		total_accepted_score = total_accepted_score + answers[i]["score"]
 	
 	#For all answers, find reputation to calculate average answer count per question.
-	all_counter++
+	all_counter+=1
 	#add total reputation for all answers
 	total_reputation = total_reputation + answers[i]["reputation"]
 	
